@@ -1,7 +1,6 @@
 package nLayeredDemo.business.concretes;
 
 import java.util.List;
-
 import jLogger.JLoggerManager;
 import nLayeredDemo.business.abstracts.ProductService;
 import nLayeredDemo.dataAccess.abtracts.ProductDao;
@@ -22,7 +21,7 @@ public class ProductManager implements ProductService {
 	public void add(Product product) {
 		if (product.getCategoryId() == 1) {
 			System.out.println("you cannot add a product to this category");
-			return;
+			return; 
 		}
 		this.productDao.add(product);
 		this.loggerService.log("Products logged with JLoggerService: "+product.getName());
