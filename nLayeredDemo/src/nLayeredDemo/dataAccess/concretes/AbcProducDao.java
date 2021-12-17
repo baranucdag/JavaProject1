@@ -9,7 +9,7 @@ public class AbcProducDao implements ProductDao {
 
 	@Override
 	public void add(Product product) {
-		System.out.println("product added with Abc system:  "+product.getName());
+		System.out.println("product added with Abc system:  " + product.getName());
 	}
 
 	@Override
